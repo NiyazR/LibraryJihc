@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "720480851096",
+    "project_id": "edulibrary-college",
+    "storage_bucket": "edulibrary-college.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:720480851096:android:10baeeb2bfa47d55966ced",
+        "android_client_info": {
+          "package_name": "com.example.bookjihc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "720480851096-6qrgjh77svrn5mvtt49sl3js3k093qv4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAr4M45x-ofOQzx_6KDBfya4ToIAAZW98A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "720480851096-6qrgjh77svrn5mvtt49sl3js3k093qv4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

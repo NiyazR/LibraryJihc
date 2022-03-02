@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="8dp"
+    android:alpha="0.8"
+    app:cardElevation="0dp"
+    android:foreground="@drawable/dottedborder"
+
+    app:contentPadding="10dp"
+    android:layout_marginTop="10dp"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+
+
+
+
+        >
+
+
+        <TextView
+            android:id="@+id/categoryTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Санат атауы"
+
+
+            android:textColor="@color/black" />
+
+        <ImageButton
+            android:id="@+id/ddeleteBTn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/shape_button"
+            android:src="@drawable/ic_delete_white" />
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+
+
+

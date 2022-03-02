@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back01"
+    android:padding="20dp"
+    tools:context=".activities.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/iconIv"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/logo"
+
+
+        ></ImageView>
+
+    <TextView
+        android:id="@+id/textview_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iconIv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="EduLibrary қолданбасына қош келдіңіз"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/skipBtn"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shape_button03"
+        android:text="кіру"
+        android:textColor="@color/graybtn"
+
+
+        />
+
+
+    <Button
+        android:id="@+id/skipBtn"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:background="@drawable/shape_button03"
+        android:text="қонақ"
+        android:textColor="@color/graybtn"
+
+
+        />
+
+
+</RelativeLayout>

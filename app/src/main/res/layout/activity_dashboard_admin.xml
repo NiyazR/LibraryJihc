@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back01"
+    tools:context=".activities.DashboardAdminActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbarRl"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/shape_tollbar02">
+
+        <ImageButton
+            android:id="@+id/ptofileBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_baseline_person_white" />
+
+        <TextView
+            android:id="@+id/TitleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="Мұғалім парақшасы"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/subTitleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TitleTv"
+            android:layout_centerHorizontal="true"
+
+            android:text="abc@exmaple.com"
+
+            android:textColor="@color/white" />
+
+
+        <ImageButton
+            android:id="@+id/loginBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_power_gray" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/searchEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbarRl"
+        android:layout_marginStart="10dp"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+
+        android:drawableStart="@drawable/ic_seacr"
+        android:foreground="@drawable/dottedborder"
+
+
+        android:hint="Search"
+        android:padding="10dp"
+        android:textColorHint="@color/gray01" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/categeroisvRv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomL"
+        android:layout_below="@+id/searchEt"
+
+
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/row_category" />
+
+
+    <LinearLayout
+        android:id="@+id/bottomL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/AddCategoryBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_weight='1'
+            android:background="@drawable/shape_button"
+            android:minHeight="50dp"
+            android:text="+ Санат қосу"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addPdfFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3FC6D4"
+            android:src="@drawable/ic_baseline_picture_as_pdf_24"
+            app:fabCustomSize="50dp"
+            app:tint="@color/white" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

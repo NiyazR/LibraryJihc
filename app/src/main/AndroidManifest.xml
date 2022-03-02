@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bookjihc">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="EduLibra"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".activities.ForgotPasswordActivity"
+            android:exported="false" />
+        <activity android:name=".activities.ProfileEditActivity" />
+        <activity android:name=".activities.RegisterTeachersActivity" />
+        <activity android:name=".activities.ProfileActivity" />
+        <activity android:name=".activities.PdfViewActivity" />
+        <activity android:name=".activities.PdfDetailActivity" />
+        <activity android:name=".activities.PdfEditActivity" />
+        <activity android:name=".activities.PdfListAdminActivity" />
+        <activity android:name=".activities.PdfAddActivity" />
+        <activity android:name=".activities.MainActivity" />
+        <activity android:name=".activities.CategoryaddActivity" />
+        <activity android:name=".activities.DashboardAdminActivity" />
+        <activity android:name=".activities.DashBoardUserActivity" />
+        <activity android:name=".activities.RegisterActivity" />
+        <activity android:name=".activities.LoginActivity" />
+        <activity
+            android:name=".activities.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
